@@ -1,0 +1,181 @@
+body {
+    line-height: 0.2;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 20px;
+    margin: 1px;
+    color: black;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 50px;
+    transition: color 0.5;
+}
+
+nav ul li a:hover {
+    color: green;
+}
+
+#hero-1 {
+    background-image: url('https://i.pinimg.com/564x/d4/ed/09/d4ed09ffcde52157025fd41199f44f0f.jpg');
+    image-rendering: auto;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 100px;
+    position: relative;
+}
+
+#hero-1 h2 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#hero-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#hero-1 h2 {
+    position: relative;
+    z-index: 2;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+.Products {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 100px;
+}
+
+.Products div {
+    flex: 1 1 calc(25%-40);
+    box-sizing: border-box;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.Products div:hover {
+    transform: scale(1.05);
+}
+
+.Products img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.Products p {
+    font-size: 15px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.Price {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+}
+
+body > footer {
+    display: flex;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1%;
+    text-align: center;
+  }
+  
+  footer h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .footer-links li {
+    margin: 0;
+  }
+
+  .footer-links a {
+    color: #ddd; 
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+  }
+
+  .footer-links li a:hover {
+    color: green;
+}
